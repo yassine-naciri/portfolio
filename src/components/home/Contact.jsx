@@ -103,7 +103,7 @@ const Contact = () => {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, type: "spring", stiffness: 150 }}
-      className="bg-white dark:bg-gray-900 rounded-xl shadow-lg w-full max-w-md p-8 space-y-6"
+      className="bg-gray-900 rounded-xl shadow-lg w-full max-w-md p-8 space-y-6"
     >
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-bold text-gray-200">Leave a Message</h2>
