@@ -1,50 +1,41 @@
-import AboutPic from "../../images/about.avif"
+import AboutPic from "../../images/about.avif";
+import { motion } from "framer-motion";
 
-import { delay, motion ,AnimatePresence} from "framer-motion"
-const Contacts = () => {
-    return (
-        <section>
+const About = () => {
+  return (
+    <section className="bg-gradient-to-r from-black to-red-700 py-16 px-6 lg:px-24">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 50, damping: 20, delay: 0.5 }}
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 text-white"
+      >
+        <div className="flex-1">
+          <h1
+            id="about"
+            className="text-4xl md:text-5xl font-bold mb-6 tracking-wide"
+          >
+            About Me
+          </h1>
+          <p className="text-lg md:text-xl font-medium leading-relaxed">
+            Hi, I’m <span className="text-red-600 font-extrabold">&#x59;&#x61;&#x73;&#x73;&#x69;&#x6E;&#x65;!</span> I’m a web developer who loves to make beautiful things.
+          </p>
+        </div>
+
         <motion.div
-        initial={{opacity:0 ,y: 20}}
-        animate={{opacity: 7,y:-5 }}
-        transition={{type : "spring",
-        stiffness:50,
-        damping:20,
-        delay: 3 }}
-        className="p-6 w-full h-150 bg-gradient-to-r from-black to-red-700 
-                 transition-all duration-300 text-black flex flex-col justify-around items-center font-bold text-3xl ">
-      
-
- 
-        <div className="p-4 text-white transition-all duration-500 hover:scale-y-1" >   
-            <h1 id="skills">About Me</h1>
-        </div>
-
-        
-
-        <div className="flex justify-evenly items-center w-full h-full">
-        
-        <div className="w-150 flex ">
-        <h1 className="font-bol lg:w-150 text-white"> Hi, I’m <span className="text-red-600">Yassine!</span> I’m a web developer who loves to make beautiful things.</h1>
-        
-        </div>
-
-
-        <div className="transition-all duration-500 hover:scale-y-1 ">
-        <img className=" p-4 w-100 h-100 object-contain   lg:border  lg:rounded-4xl " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkmq5irMOoDxOOFEzmA8ixJFpVn9Pyn7LHg&s" alt="Loading..." />
-        </div>
-        
-        </div>    
-   
-              
-        
-        
-       
-        
+          whileHover={{ scale: 1.05 }}
+          className="flex-1 flex justify-center"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkmq5irMOoDxOOFEzmA8ixJFpVn9Pyn7LHg&s" 
+            alt="Loading..."
+            className="w-full max-w-sm rounded-3xl border-4 border-red-600 object-contain shadow-lg"
+            loading="lazy"
+          />
         </motion.div>
-
-        </section>
-    );
+      </motion.div>
+    </section>
+  );
 };
 
-export default Contacts;
+export default About;

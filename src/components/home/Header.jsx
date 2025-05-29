@@ -123,10 +123,10 @@ const Header = () => {
                 delay: 0.7}}
                
                 className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-red-500 font-semibold transition-colors duration-300 group"
-                 href="#skills">Skills
+                 href="#home">Home
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
         </a>
-            {["About","Contact"].map((item,index) => (
+            {["Skills","About","Contact"].map((item,index) => (
                 <motion.a key={item}
                 initial={{opacity:0 ,y: -20}}
                 animate={{opacity: 1,y:0 }}
@@ -136,7 +136,7 @@ const Header = () => {
                 delay: 0.7 + index * 0.2}}
                
                 className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-red-500 font-semibold transition-colors duration-300 group"
-                 href="#">{item}
+                href={`#${item.toLowerCase()}`}>{item}
                 
 
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
