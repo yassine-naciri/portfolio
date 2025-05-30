@@ -122,7 +122,7 @@ const Header = () => {
                 damping:20,
                 delay: 0.7}}
                
-                className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-red-500 font-semibold transition-colors duration-300 group"
+                className="relative text-gray-200 text-red-500 font-semibold transition-colors duration-300 group"
                  href="#home">Home
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
         </a>
@@ -135,7 +135,7 @@ const Header = () => {
                 damping:20,
                 delay: 0.7 + index * 0.2}}
                
-                className="relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-red-500 font-semibold transition-colors duration-300 group"
+                className="relative text-gray-200 hover:text-red-500 font-semibold transition-colors duration-300 group"
                 href={`#${item.toLowerCase()}`}>{item}
                 
 
@@ -150,7 +150,7 @@ const Header = () => {
             initial={{opacity :0 , scale:0.5}}
             animate={{opacity:1 ,scale:1}}
             transition={{delay:1.3 ,duration:0.8}}
-            href="https://github.com/yassine-naciri" target="_blank" className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300">
+            href="https://github.com/yassine-naciri" target="_blank" className="text-gray-300 hover:text-red-400 transition-colors duration-300">
             <FiGithub className="w-5 h-5"></FiGithub>
 
             </motion.a>
@@ -160,7 +160,7 @@ const Header = () => {
             initial={{opacity :0 , scale:0.5}}
             animate={{opacity:1 ,scale:1}}
             transition={{delay:1.3 ,duration:0.8}}
-            href="https://x.com/dscsdcdv7" target="_blank" className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300">
+            href="https://x.com/dscsdcdv7" target="_blank" className="text-gray-300 hover:text-red-400 transition-colors duration-300">
             <FiTwitter className="w-5 h-5"></FiTwitter>
 
             </motion.a>
@@ -169,7 +169,7 @@ const Header = () => {
             initial={{opacity :0 , scale:0.5}}
             animate={{opacity:1 ,scale:1}}
             transition={{delay:1.3 ,duration:0.8}}
-            href="#" className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300">
+            href="#" className="text-gray-300 hover:text-red-400 transition-colors duration-300">
             <FiLinkedin className="w-5 h-5"></FiLinkedin>
 
             </motion.a>
@@ -204,7 +204,7 @@ const Header = () => {
             height: IsOpen ? "auto" : 0,
         }}
         transition={{duration: 0.5}}
-        className="md:hidden overflow-hidden bg-white dark:bg-gray-900 shadow-lg
+        className="md:hidden overflow-hidde bg-gray-900 shadow-lg
         px-4 py-5 space-y-5">
         <nav className="flex flex-col space-y-3">
 
@@ -216,7 +216,7 @@ const Header = () => {
         
 
         </nav>
-        <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="pt-4 border-tborder-gray-700">
             <div className="flex space-x-5">
             <a href="https://github.com/yassine-naciri" target="_blank" >
                 <FiGithub className="h-5 w-5 text-gray-300"/>
@@ -265,7 +265,7 @@ const Header = () => {
             damping:30,
             stiffness : 200,
             duration: 0.8}}
-             className="bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6"
+             className="bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6"
              >
                 <div className="flex justify-between items-center mb-4">
                     <h1 className="text-2xl font-bold text-gray-300">Contact Me</h1>
