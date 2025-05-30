@@ -268,7 +268,7 @@ const Header = () => {
              className="bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-md p-6"
              >
                 <div className="flex justify-between items-center mb-4">
-                    <h1 className="text-2xl font-bold text-gray-300">Get In Touch</h1>
+                    <h1 className="text-2xl font-bold text-gray-300">Contact Me</h1>
                     <button onClick={closeContact}>
                     <FiX  className="w-5 h-5  text-gray-300 font-extrabold hover:text-red-600 border rounded-2xl  hover:border-amber-100 transition duration-300 cursor-pointer"/>
                     </button>
